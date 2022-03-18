@@ -1,0 +1,42 @@
+header {
+    &#header {
+        z-index: 999;
+        position: fixed;
+        >.inner {
+            background-color: $clr-base;
+            margin: 0 auto;
+            padding: 0 150px;
+            position: fixed;
+            width: 100%;
+            .header_main {
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    a {
+                        img {
+                            width: 200px;
+                            object-fit: cover;
+                            height: 80px;
+                        }
+                    }
+                }
+                .main_nav {
+                    ul {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        li {
+                            margin-right: 50px;
+                            a {
+                                text-transform: uppercase;
+                                color: $clr-base-font;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

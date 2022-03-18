@@ -1,0 +1,147 @@
+footer {
+    &#footer {
+        .container {
+            border-top: 1px solid #f3f5f9;
+            background-color: #fafafa;
+            padding-top: 30px;
+            >.inner {
+                max-width: 80%;
+                display: flex;
+                margin: 0 auto;
+                justify-content: space-between;
+                text-align: left;
+                .address {
+                    margin-bottom: 30px;
+                    .logo {
+                        margin-bottom: 30px;
+                        img {
+                            width: 204px;
+                            object-fit: cover;
+                            height: 90px;
+                        }
+                    }
+                    .item_content {
+                        ul {
+                            li {
+                                display: flex;
+                                margin-bottom: 10px;
+                                i {
+                                    margin-right: 10px;
+                                }
+                                p {
+                                    color: #4b566b;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .about_us {
+                    margin-bottom: 30px;
+                    .title {
+                        margin-bottom: 25px;
+                        h3 {
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 600;
+                        }
+                    }
+                    ul {
+                        li {
+                            margin-bottom: 10px;
+                            a {
+                                color: #4b566b;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+                .contact {
+                    margin-bottom: 30px;
+                    .hotline {
+                        margin-bottom: 25px;
+                        .title {
+                            margin-bottom: 25px;
+                            h3 {
+                                font-size: 20px;
+                                line-height: 30px;
+                                font-weight: 600;
+                            }
+                        }
+                        .item_thumb {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            i {
+                                color: #1a79e9;
+                                font-size: 24px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                font-size: 40px;
+                                font-weight: bold;
+                                color: #1a79e9;
+                            }
+                        }
+                        .txt_desp {
+                            p {
+                                font-size: 16px;
+                                color: #4b566b;
+                            }
+                        }
+                    }
+                    .social {
+                        .title {
+                            margin-bottom: 15px;
+                            h3 {
+                                font-size: 20px;
+                                line-height: 30px;
+                                font-weight: 600;
+                            }
+                        }
+                        ul {
+                            display: flex;
+                            li {
+                                margin-right: 10px;
+                                a {
+                                    font-size: 25px;
+                                    color: #555858;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright {
+                border-top: 1px solid #eaecf1;
+                padding: 25px 0;
+                .inner {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 80%;
+                    margin: 0 auto;
+                    align-items: center;
+                .txt_desp {
+                    p {
+                        font-size: 12px;
+                        color: #555858;
+                    }
+                }
+                .item_thumb {
+                    ul {
+                        display: flex;
+                        li {
+                            margin-right: 10px;
+                            img {
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}
