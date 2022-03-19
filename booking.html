@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDoctor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="inner">
+            <div class="header_main">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="http://vmsco.vn/wp-content/uploads/2020/07/VI_Logo-eDoctor.jpg" alt="">
+                    </a>
+                </h1>
+                <div class="main_nav">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="doctor.html">Bác sĩ</a></li>
+                        <li><a href="specialized.html">Chuyên khoa</a></li>
+                        <li><a href="price.html">Gói khám</a></li>
+                        <li><a href="help.html">Hỗ trợ</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <div id="booking">
+        <div class="inner">
+           <div class="info_doctor">
+               <div class="container">
+                   <div class="item_thumb">
+                        <img src="https://www.victoriavn.com/images/Suong_-_Tim_bac_si/B%C3%81C_XU%C3%82N_ANH.png" />
+                   </div>
+                   <div class="txt_desp">
+                       <h1>Đặt lịch khám</h1>
+                       <h2 class="ttl">
+                            Nguyễn Xuân Anh
+                       </h2>
+                       <p class="date_time">
+                            15:30 - 16:00 - Thứ 7 - 19/03/2022
+                       </p>
+                   </div>
+               </div>
+           </div>
+           <div class="form">
+               <div class="container">
+                    <ul class="tab">
+                        <li>
+                            <a href="#form1">Đặt cho bản thân</a>
+                        </li>
+                        <li>
+                            <a href="#form2">Đặt cho người thân</a>
+                        </li>
+                    </ul>
+                    <div class="tab_content">
+                        <div class="tab_item" id="form1">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="name">Họ tên</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Giới tính</label>
+                                    <input type="radio" class="form-control" name="gender" value="Nữ" checked>Nữ
+                                    <input type="radio" class="form-control" name="gender" value="Nam">Nam
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">SĐT</label>
+                                    <input type="number" class="form-control" id="phone" aria-describedby="phone" placeholder="số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Ngày sinh</label>
+                                    <input type="date" class="form-control" id="date" aria-describedby="date" placeholder="Ngày sinh">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="Địa chỉ">
+                                </div>
+                                <button type="submit">Xác nhận đặt khám</button>
+                            </form>
+                        </div>
+                        <div class="tab_item" id="form2">
+                            <form action="">
+                                <p>Thông tin người đặt lịch</p>
+                                <div class="form-group">
+                                    <label for="name_account">Họ tên</label>
+                                    <input type="text" class="form-control" id="name_account" aria-describedby="name" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone_account">SĐT</label>
+                                    <input type="number" class="form-control" id="phone_account" aria-describedby="phone" placeholder="số điện thoại">
+                                </div>
+                                <p>Thông tin người khám bệnh</p>
+                                <div class="form-group">
+                                    <label for="name">Họ tên</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Giới tính</label>
+                                    <input type="radio" class="form-control" name="gender" value="Nữ" checked>Nữ
+                                    <input type="radio" class="form-control" name="gender" value="Nam">Nam
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">SĐT</label>
+                                    <input type="number" class="form-control" id="phone" aria-describedby="phone" placeholder="số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Ngày sinh</label>
+                                    <input type="date" class="form-control" id="date" aria-describedby="date" placeholder="Ngày sinh">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="Địa chỉ">
+                                </div>
+                                <button type="submit">Xác nhận đặt khám</button>
+                            </form>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="inner">
+                <div class="address">
+                    <div class="logo">
+                        <img src="http://vmsco.vn/wp-content/uploads/2020/07/VI_Logo-eDoctor.jpg" alt="">
+                    </div>
+                    <div class="item_content">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>372/15/13H Cách Mạng Tháng Tám, P. 10, Q. 3, Tp. HCM</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <p>523 Tô Hiến Thành, P. 14, Q. 10, Tp. HCM</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>cskh@youmed.vn</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-paste"></i>
+                                <p>Mã số thuế: 0315268642</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about_us">
+                    <div class="title">
+                        <h3>Về EDoctor</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Điều khoản</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="hotline">
+                        <div class="title">
+                            <h3>Tổng đài</h3>
+                        </div>
+                        <div class="item_thumb">
+                            <i class="fa-solid fa-phone"></i>
+                            <p> 1900-2805 </p>
+                        </div>
+                        <div class="txt_desp">
+                            <p>(Thứ 2 đến Thứ 7 - Từ 8h30 đến 20h30)</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="title">
+                            <h3>Kết nối với EDoctor</h3>
+                        </div>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="inner">
+                    <div class="txt_desp">
+                        <p>© 2022 EDoctor. All Rights Reserved.</p>
+                    </div>
+                    <div class="item_thumb">
+                        <ul>
+                            <li>
+                                <img src="https://youmed.vn/assets/images/bo-cong-thuong.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="https://images.dmca.com/Badges/dmca-badge-w200-2x1-02.png?ID=a74b3497-ddcd-4860-89c3-fce83c39f12a"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

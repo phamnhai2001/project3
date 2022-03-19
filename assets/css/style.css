@@ -827,3 +827,113 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
   line-height: 25px;
   margin-bottom: 10px;
 }
+
+#booking {
+  padding-top: 10%;
+}
+#booking .inner {
+  max-width: 1200px;
+  width: 88.8888%;
+  margin: 0 auto 80px;
+}
+#booking .inner .info_doctor {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+#booking .inner .info_doctor .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#booking .inner .info_doctor .container .item_thumb img {
+  width: 135px;
+  height: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#booking .inner .info_doctor .container .txt_desp {
+  text-align: left;
+  padding-left: 30px;
+  max-width: 500px;
+}
+#booking .inner .info_doctor .container .txt_desp h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-bottom: 15px;
+  color: #555858bf;
+}
+#booking .inner .info_doctor .container .txt_desp .ttl {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+#booking .inner .info_doctor .container .txt_desp .date_time {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555858;
+}
+#booking .inner .form .container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+#booking .inner .form .container .tab {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#booking .inner .form .container .tab li a {
+  background: #5396ec;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  margin-right: 20px;
+  display: inline-block;
+}
+#booking .inner .form .container .tab li.active a {
+  color: white;
+  background-color: #555858;
+}
+#booking .inner .form .container .tab_content .tab_item {
+  display: none;
+}
+#booking .inner .form .container .tab_content .tab_item form p {
+  font-size: 14px;
+  color: #1b4eab;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 15px;
+}
+#booking .inner .form .container .tab_content .tab_item form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+#booking .inner .form .container .tab_content .tab_item form .form-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+#booking .inner .form .container .tab_content .tab_item form .form-group input[type=text], #booking .inner .form .container .tab_content .tab_item form .form-group input[type=number], #booking .inner .form .container .tab_content .tab_item form .form-group input[type=date] {
+  border: 1px solid #dddddd;
+  height: 40px;
+  width: 500px;
+}
+#booking .inner .form .container .tab_content .tab_item form .form-group input[type=radio] {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
+#booking .inner .form .container .tab_content .tab_item form button[type=submit] {
+  background: #1c999d;
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
