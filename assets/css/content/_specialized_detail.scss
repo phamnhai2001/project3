@@ -1,0 +1,124 @@
+#wrapper {
+    &.specialized_detail {
+        >.inner {
+            margin: 0 auto 80px;
+            padding-top: 6%;
+            .info_specialized {
+                background: #fafafa;
+                padding: 50px 120px;
+                margin-bottom: 40px;
+                .ttl {
+                    margin-bottom: 30px;
+                    h2 {
+                        font-size: 30px;
+                        line-height: 35px;
+                        text-align: left;
+                    }
+                }
+                .txt_desp {
+                    p {
+                        text-align: left;
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .list_specialized {
+                .item_specialized {
+                    max-width: 1200px;
+                    background: #fff;
+                    margin: 0 auto 30px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    padding: 25px;
+                    .container {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .info_doctor {
+                            display: flex;
+                            .item_thumb {
+                                margin-right: 15px;
+                                img {
+                                    height: 130px;
+                                    border-radius: 50%;
+                                    object-fit: cover;
+                                    width: 130px;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    a {
+                                        font-size: 16px;
+                                        color: #45c3d2;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                            .txt_desp {
+                                text-align: left;
+                                width: 66%;
+                                h3 {
+                                    font-size: 22px;
+                                    color: #45c3d2;
+                                    line-height: 30px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    color: #555858;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                        .booking {
+                            text-align: left;
+                            max-width: 50%;
+                            border-left: 1px solid #dddddd;
+                            padding-left: 60px;
+                            .date {
+                                font-size: 18px;
+                                text-decoration: underline;
+                                text-underline-offset: 3px;
+                                margin-bottom: 20px;
+                            }
+                            .ttl {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 15px;
+                                svg {
+                                    width: 15px;
+                                    margin-right: 10px;
+                                }
+                                h3 {
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .time {
+                                margin-bottom: 10px;
+                                a {
+                                    display: inline-block;
+                                    background: antiquewhite;
+                                    padding: 10px;
+                                    color: #000;
+                                    margin: 0 0 10px 5px;
+                                }
+                            }
+                            .address {
+                                border-top: 1px solid #dddddd;
+                                padding-top: 15px;
+                                .ttl {
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                    color: #555858;
+                                }
+                                .name_address {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
