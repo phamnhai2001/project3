@@ -1,0 +1,30 @@
+#wrapper {
+    &.new_detail {
+        >.inner {
+            padding-top: 10%;
+            max-width: 1200px;
+            width: 88.88%;
+            margin: 0 auto 80px;
+            padding: 10% 70px 0;
+            .ttl {
+                text-align: left;
+                margin-bottom: 30px;
+                h3 {
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+            }
+            .txt_desp {
+                img {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
