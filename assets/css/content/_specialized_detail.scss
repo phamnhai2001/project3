@@ -16,10 +16,20 @@
                     }
                 }
                 .txt_desp {
-                    p {
-                        text-align: left;
+                    text-align: left;
+                    span {
+                       background-color: transparent !important;
+                    }
+                    strong {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 35px;
+                    }
+                    ul {
                         line-height: 24px;
                         font-size: 16px;
+                        list-style: disc;
+                        margin-left: 30px;
                     }
                 }
             }
@@ -36,6 +46,7 @@
 
                         .info_doctor {
                             display: flex;
+                            max-width: 500px;
                             .item_thumb {
                                 margin-right: 15px;
                                 img {
@@ -56,15 +67,25 @@
                             .txt_desp {
                                 text-align: left;
                                 width: 66%;
-                                h3 {
+                                h4 {
                                     font-size: 22px;
                                     color: #45c3d2;
                                     line-height: 30px;
                                 }
-                                p {
+                                .txt_info {
                                     font-size: 14px;
                                     color: #555858;
                                     line-height: 20px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    line-height: 25px;
+                                    -webkit-line-clamp: 3;
+                                    height: 75px;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                }
+                                h2, h3 {
+                                    display: none;
                                 }
                             }
                         }

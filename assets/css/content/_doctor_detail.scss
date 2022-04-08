@@ -122,20 +122,27 @@
                     margin-bottom: 10px;
                 }
                 .introduction {
-                    ul {
-                        margin-bottom: 10px;
-                        li {
-                            line-height: 25px;
-                            font-size: 15px;
-                            list-style: disc;
-                            color: #3f3d3d;
-                        }
-                    }
                     .txt_desp {
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 25px;
-                        margin-bottom: 10px;
+                        text-align: left;
+                        span {
+                           background-color: transparent !important;
+                        }
+                        h3, h2, strong {
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 35px;
+                        }
+                        ul {
+                            line-height: 24px;
+                            font-size: 16px;
+                            list-style: disc;
+                            margin-left: 30px;
+                            li {
+                                line-height: 25px;
+                                font-size: 15px;
+                                color: #3f3d3d;
+                            }
+                        }
                     }
                 }
             }

@@ -1,6 +1,12 @@
 #wrapper {
     >.inner {
         padding-top: 35px;
+        @include pc {
+            padding-top: get_pc(35);
+        }
+        @include sp {
+            padding-top: get_sp(35);
+        }
         section {
             &#banner {
                 .container {
@@ -9,6 +15,14 @@
                         position: relative; 
                         width: 100%;
                         height: 700px; 
+                        @include pc {
+                            margin: get_pc(50) auto;
+                            height: get_pc(500);
+                        }
+                        @include sp {
+                            margin: get_sp(50) auto;
+                            height: get_sp(500);
+                        }
                         .slide { 
                             position: absolute; 
                             top: 0; 
@@ -21,20 +35,48 @@
                             .txt_desp {
                                 text-align: left;
                                 padding-left: 80px;
+                                @include pc {
+                                    padding-left: get_pc(80);
+                                }
+                                @include sp {
+                                    padding-left: get_sp(80);
+                                }
                                 .text {
                                     font-size: 20px;
                                     color: $clr-base;
                                     margin-bottom: 20px;
+                                    @include pc {
+                                        font-size: get_pc(20);
+                                        margin-bottom: get_pc(20);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(20);
+                                        margin-bottom: get_sp(20);
+                                    }
                                 }
                                 .description {
                                     font-size: 16px;
                                     color: $clr-base;
+                                    @include pc {
+                                        font-size: get_pc(16);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(16);
+                                    }
                                 }    
                                 h3 {
                                     font-size: 34px;
                                     text-transform: uppercase;
                                     color: #a9e8eb;
                                     margin-bottom: 30px;
+                                    @include pc {
+                                        font-size: get_pc(34);
+                                        margin-bottom: get_pc(30);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(34);
+                                        margin-bottom: get_sp(30);
+                                    }
                                 }
                             } 
                             .item_thumb {
@@ -42,8 +84,15 @@
                                 position: absolute;
                                 right: 0;
                                 top: 0;
+                                width: 50%;
                                 img {
                                     height: 700px;
+                                    @include pc {
+                                        height: get_pc(500);
+                                    }
+                                    @include sp {
+                                        height: get_sp(500);
+                                    }
                                 }
                             }
                           }
@@ -55,6 +104,12 @@
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 80px;
+                    @include pc {
+                        margin-bottom: get_pc(80);
+                    }
+                    @include sp {
+                        margin-bottom: get_sp(80);
+                    }
                     .thumbnail {
                         img {
 
@@ -64,20 +119,51 @@
                         padding: 100px 120px 0 0;
                         width: 50%;
                         text-align: left;
+                        @include pc {
+                            padding: get_pc(100) get_pc(120) 0 0;
+                        }
                         .title {
                             margin-bottom: 10px;
+                            @include pc {
+                                margin-bottom: get_pc(10);
+                            }
+                            @include sp {
+                                margin-bottom: get_sp(10);
+                            }
                             h2 {
                                 text-transform: uppercase;
                                 font-weight: bold;
                                 font-size: 54px;
                                 line-height: 80px;
+                                @include pc {
+                                    font-size: get_pc(54);
+                                    line-height: get_pc(80);
+                                }
+                                @include sp {
+                                    font-size: get_sp(54);
+                                    line-height: get_sp(80);
+                                }
                             }
                         }
                         .txt_desp {
                             margin-bottom: 45px;
+                            @include pc {
+                                margin-bottom: get_pc(45);
+                            }
+                            @include sp {
+                                margin-bottom: get_sp(45);
+                            }
                             p {
                                 line-height: 25px;
                                 font-size: 18px;
+                                @include pc {
+                                    line-height: get_pc(25);
+                                    font-size: get_pc(18);
+                                }
+                                @include sp {
+                                    line-height: get_sp(25);
+                                    font-size: get_sp(18);
+                                }
                             }
                         }
                         .content {
@@ -85,6 +171,12 @@
                             flex-wrap: wrap;
                             justify-content: space-between;
                             margin-bottom: 15px;
+                            @include pc {
+                                margin-bottom: get_pc(15);
+                            }
+                            @include sp {
+                                margin-bottom: get_sp(15);
+                            }
                             .item_content {
                                 display: flex;
                                 margin-bottom: 25px;
@@ -93,13 +185,39 @@
                                 border-radius: 10px;
                                 align-items: center;
                                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                @include pc {
+                                    margin-bottom: get_pc(25);
+                                    padding: get_pc(20);
+                                    border-radius: get_pc(10);
+                                }
+                                @include sp {
+                                    margin-bottom: get_sp(25);
+                                    padding: get_sp(20);
+                                    border-radius: get_sp(10);
+                                }
                                 .item_thumb {
                                     background: #1a79e9;
                                     margin-right: 15px;
                                     padding: 8px;
                                     border-radius: 10px;
+                                    @include pc {
+                                        margin-right: get_pc(15);
+                                        padding: get_pc(8);
+                                        border-radius: get_pc(10);
+                                    }
+                                    @include sp {
+                                        margin-right: get_sp(15);
+                                        padding: get_sp(8);
+                                        border-radius: get_sp(10);
+                                    }
                                     img {
                                         width: 50px;
+                                        @include pc {
+                                            width: get_pc(50);
+                                        }
+                                        @include sp {
+                                            width: get_sp(50);
+                                        }
                                     }
                                 }
                                 .txt_desp {
@@ -108,6 +226,14 @@
                                         line-height: 25px;
                                         font-size: 18px;
                                         font-weight: 600;
+                                        @include pc {
+                                            line-height: get_pc(25);
+                                            font-size: get_pc(18);
+                                        }
+                                        @include sp {
+                                            line-height: get_sp(25);
+                                            font-size: get_sp(18);
+                                        }
                                     }
                                 }
                             }
@@ -159,6 +285,12 @@
                                     color: $clr-base;
                                     font-size: 24px;
                                     font-weight: 600;
+                                    @include pc {
+                                        font-size: get_pc(24);
+                                    }
+                                    @include sp {
+                                        font-size: get_sp(24);
+                                    }
                                 }
                             }
                         }
@@ -168,16 +300,37 @@
             &#specialized {
                 .inner {
                     max-width: 1200px;
-                    width: 100%;
+                    width: 88.888%;
                     margin: 0 auto 80px;
+                    @include pc {
+                        max-width: 100%;
+                        margin: 0 auto get_pc(80);
+                    }
+                    @include sp {
+                        margin: 0 auto get_sp(80);
+                    }
                     .ttl {
                         margin-bottom: 20px;
+                        @include pc {
+                            margin-bottom: get_pc(20);
+                        }
+                        @include sp {
+                            margin-bottom: get_sp(20);
+                        }
                         h3 {
                             font-size: 24px;
                             line-height: 30px;
                             text-transform: uppercase;
                             text-align: left;
                             font-weight: 600;
+                            @include pc {
+                                font-size: get_pc(24);
+                                line-height: get_pc(30);
+                            }
+                            @include sp {
+                                font-size: get_sp(24);
+                                line-height: get-sp(30);
+                            }
                         }
                     }
                     .slider {
@@ -224,9 +377,25 @@
                                 height: 155px;
                                 object-fit: cover;
                                 margin: 0 auto 10px;
+                                @include pc {
+                                    width: get_pc(225);
+                                    height: get_pc(155);
+                                    margin: 0 auto get_pc(10);
+                                }
+                                @include sp {
+                                    width: get_sp(225);
+                                    height: get_sp(155);
+                                    margin: 0 auto get_sp(10);
+                                }
                             }
                             p {
                                 font-size: 16px;
+                                @include pc {
+                                    font-size: get_pc(16);
+                                }
+                                @include sp {
+                                    font-size: get_sp(16);
+                                }
                             }
                         }
                     }
@@ -236,18 +405,47 @@
                 background: whitesmoke;
                 padding: 50px 0;
                 margin-bottom: 80px;
+                width: 100%;
+                @include pc {
+                    padding: get_pc(50) 0;
+                    margin-bottom: get_pc(80);
+                }
+                @include sp {
+                    padding: get_sp(50) 0;
+                    margin-bottom: get_sp(80);
+                }
                 .inner {
                     max-width: 1200px;
-                    width: 100%;
+                    width: 88.888%;
                     margin: 0 auto;
+                    @include pc {
+                        max-width: 100%;
+                    }
+                    @include sp {
+
+                    }
                     .ttl {
                         margin-bottom: 20px;
+                        @include pc {
+                            margin-bottom: get_pc(20);
+                        }
+                        @include sp {
+                            margin-bottom: get_sp(20);
+                        }
                         h3 {
                             font-size: 24px;
                             line-height: 30px;
                             text-transform: uppercase;
                             text-align: left;
                             font-weight: 600;
+                            @include pc {
+                                font-size: get_pc(24);
+                                line-height: get_pc(30);
+                            }
+                            @include sp {
+                                font-size: get_sp(24);
+                                line-height: get_sp(30);
+                            }
                         }
                     }
                     .slider {
@@ -295,9 +493,25 @@
                                 object-fit: cover;
                                 border: 1px solid #dddddd;
                                 margin: 0 auto 10px;
+                                @include pc {
+                                    width: get_pc(220);
+                                    height: get_pc(190);
+                                    margin: 0 auto get_pc(10);
+                                }
+                                @include sp {
+                                    width: get_sp(220);
+                                    height: get_sp(190);
+                                    margin: 0 auto get_sp(10);
+                                }
                             }
                             p {
                                 font-size: 16px;
+                                @include pc {
+                                    font-size: get_pc(16);
+                                }
+                                @include sp {
+                                    font-size: get_sp(16);
+                                }
                             }
                         }
                     }
@@ -309,27 +523,63 @@
                     width: 100%;
                     margin: 0 auto 80px;
                     position: relative;
+                    @include pc {
+                        margin: 0 auto get_pc(80);
+                    }
+                    @include sp {
+                        max-width: 100%;
+                        width: 88.888%;
+                        margin: 0 auto get_sp(80);
+                    }
                     .ttl {
                         margin-bottom: 20px;
+                        @include pc {
+                            margin-bottom: get_pc(20);
+                        }
+                        @include sp {
+                            margin-bottom: get_sp(20);
+                        }
                         h3 {
                             font-size: 24px;
                             line-height: 30px;
                             text-transform: uppercase;
                             text-align: left;
                             font-weight: 600;
+                            @include pc {
+                                font-size: get_pc(24);
+                                line-height: get_pc(30);
+                            }
+                            @include sp {
+                                font-size: get_sp(24);
+                                line-height: get_sp(30);
+                            }
                         }
                     }
                     .container {
                         ul {
                             display: flex;
                             justify-content: space-between;
+                            width: 100%;
                             li {
+                                width: 48%;
                                 .item_thumb {
                                     margin-bottom: 20px;
+                                    @include pc {
+                                        margin-bottom: get_pc(20);
+                                    }
+                                    @include sp {
+                                        margin-bottom: get_sp(20);
+                                    }
                                     img {
-                                        width: 525px;
+                                        width: 100%;
                                         height: 283px;
                                         object-fit: cover;
+                                        @include pc {
+                                            height: get_pc(283);
+                                        }
+                                        @include sp {
+                                            height: get_sp(283);
+                                        }
                                     }
                                 }
                                 .txt_desp {
@@ -338,6 +588,15 @@
                                         font-size: 20px;
                                         font-weight: 600;
                                         line-height: 30px;
+                                        color: $clr-base-font;
+                                        @include pc {
+                                            font-size: get_pc(20);
+                                            line-height: get_pc(30);
+                                        }
+                                        @include sp {
+                                            font-size: get_sp(20);
+                                            line-height: get_sp(30);
+                                        }
                                     }
                                 }
                             }
@@ -352,6 +611,14 @@
                             font-size: 14px;
                             padding: 10px;
                             cursor: pointer;
+                            @include pc {
+                                font-size: get_pc(14);
+                                padding: get_pc(10);
+                            }
+                            @include sp {
+                                font-size: get_sp(14);
+                                padding: get_sp(10);
+                            }
                             a {
                                 color: black;
                             }

@@ -8,6 +8,12 @@ header {
             padding: 0 150px;
             position: fixed;
             width: 100%;
+            @include pc {
+                padding: 0 get_pc(40);
+            }
+            @include sp {
+                padding: 0 get_sp(40);
+            }
             .header_main {
                 display: flex;
                 justify-content: space-between;
@@ -17,6 +23,14 @@ header {
                             width: 200px;
                             object-fit: cover;
                             height: 80px;
+                            @include pc {
+                                width: get_pc(200);
+                                height: get_pc(80);
+                            }
+                            @include sp {
+                                width: get_sp(200);
+                                height: get_sp(80);
+                            }
                         }
                     }
                 }
@@ -27,12 +41,24 @@ header {
                         align-items: center;
                         .menu_item {
                             margin-right: 50px;
+                            @include pc {
+                                margin-right: get_pc(30);
+                            }
+                            @include sp {
+                                margin-right: get_sp(30);
+                            }
                             a {
                                 text-transform: uppercase;
                                 color: $clr-base-font;
                                 font-size: 14px;
                                 font-weight: 600;
                                 position: relative;
+                                @include pc {
+                                    font-size: get_pc(14);
+                                }
+                                @include sp {
+                                    font-size: get_sp(14);
+                                }
                             }
                             &:last-child {
                                 text-align: left;
@@ -45,6 +71,12 @@ header {
                                 .dropdown_item {
                                     border-bottom: 1px solid #dddddd;
                                     padding: 10px 20px;
+                                    @include pc {
+                                        padding: get_pc(10) get_pc(20);
+                                    }
+                                    @include sp {
+                                        padding: get_sp(10) get_sp(20);
+                                    }
                                     a {
 
                                     }

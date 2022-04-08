@@ -1,4 +1,5 @@
-#doctor {
+   
+    #doctor {
         >.inner {
             margin-bottom: 80px;
             .top_nav {
@@ -12,8 +13,9 @@
                 align-items: center;
                 a {
                     margin-right: 15px;
-                    svg {
-                        width: 20px;
+                    i {
+                        font-size: 25px;
+                        color: black;
                     }
                 }
                 h3 {
