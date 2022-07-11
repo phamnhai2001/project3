@@ -21,7 +21,7 @@
                         }
                         @include sp {
                             margin: get_sp(50) auto;
-                            height: get_sp(500);
+                            height: get_sp(730);
                         }
                         .slide { 
                             position: absolute; 
@@ -32,6 +32,9 @@
                             background-color: #1a79e9;
                             display: flex;
                             align-items: center;
+                            @include sp {
+                                flex-direction: column;
+                            }
                             .txt_desp {
                                 text-align: left;
                                 padding-left: 80px;
@@ -39,7 +42,9 @@
                                     padding-left: get_pc(80);
                                 }
                                 @include sp {
-                                    padding-left: get_sp(80);
+                                    padding-left: 0;
+                                    margin-bottom: get_sp(50);
+                                    padding-top: get_sp(60);
                                 }
                                 .text {
                                     font-size: 20px;
@@ -85,6 +90,10 @@
                                 right: 0;
                                 top: 0;
                                 width: 50%;
+                                @include sp {
+                                    position: unset;
+                                    width: 100%;
+                                }
                                 img {
                                     height: 700px;
                                     @include pc {
@@ -109,6 +118,7 @@
                     }
                     @include sp {
                         margin-bottom: get_sp(80);
+                        flex-direction: column-reverse;
                     }
                     .thumbnail {
                         img {
@@ -121,6 +131,11 @@
                         text-align: left;
                         @include pc {
                             padding: get_pc(100) get_pc(120) 0 0;
+                        }
+                        @include sp {
+                            text-align: center;
+                            width: 100%;
+                            padding: 0;
                         }
                         .title {
                             margin-bottom: 10px;
@@ -307,7 +322,7 @@
                         margin: 0 auto get_pc(80);
                     }
                     @include sp {
-                        margin: 0 auto get_sp(80);
+                        margin: 0 ;
                     }
                     .ttl {
                         margin-bottom: 20px;
@@ -422,7 +437,7 @@
                         max-width: 100%;
                     }
                     @include sp {
-
+                        margin: 0;
                     }
                     .ttl {
                         margin-bottom: 20px;
@@ -529,7 +544,7 @@
                     @include sp {
                         max-width: 100%;
                         width: 88.888%;
-                        margin: 0 auto get_sp(80);
+                        margin: 0;
                     }
                     .ttl {
                         margin-bottom: 20px;

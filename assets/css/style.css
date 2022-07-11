@@ -266,7 +266,7 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
 @media (max-width: 768px) {
   #wrapper > .inner section#banner .container #slideshow {
     margin: 6.5104166667vw auto;
-    height: 65.1041666667vw;
+    height: 95.0520833333vw;
   }
 }
 #wrapper > .inner section#banner .container #slideshow .slide {
@@ -283,6 +283,14 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 768px) {
+  #wrapper > .inner section#banner .container #slideshow .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #wrapper > .inner section#banner .container #slideshow .slide .txt_desp {
   text-align: left;
   padding-left: 80px;
@@ -294,7 +302,9 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
 }
 @media (max-width: 768px) {
   #wrapper > .inner section#banner .container #slideshow .slide .txt_desp {
-    padding-left: 10.4166666667vw;
+    padding-left: 0;
+    margin-bottom: 6.5104166667vw;
+    padding-top: 7.8125vw;
   }
 }
 #wrapper > .inner section#banner .container #slideshow .slide .txt_desp .text {
@@ -353,6 +363,12 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
   top: 0;
   width: 50%;
 }
+@media (max-width: 768px) {
+  #wrapper > .inner section#banner .container #slideshow .slide .item_thumb {
+    position: unset;
+    width: 100%;
+  }
+}
 #wrapper > .inner section#banner .container #slideshow .slide .item_thumb img {
   height: 700px;
 }
@@ -383,6 +399,10 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
 @media (max-width: 768px) {
   #wrapper > .inner section#booking .container {
     margin-bottom: 10.4166666667vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 #wrapper > .inner section#booking .container .item_booking {
@@ -393,6 +413,13 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
 @media (max-width: 1024px) {
   #wrapper > .inner section#booking .container .item_booking {
     padding: 9.765625vw 11.71875vw 0 0;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper > .inner section#booking .container .item_booking {
+    text-align: center;
+    width: 100%;
+    padding: 0;
   }
 }
 #wrapper > .inner section#booking .container .item_booking .title {
@@ -639,7 +666,7 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
 }
 @media (max-width: 768px) {
   #wrapper > .inner section#specialized .inner {
-    margin: 0 auto 10.4166666667vw;
+    margin: 0;
   }
 }
 #wrapper > .inner section#specialized .inner .ttl {
@@ -775,6 +802,11 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
     max-width: 100%;
   }
 }
+@media (max-width: 768px) {
+  #wrapper > .inner section#doctor .inner {
+    margin: 0;
+  }
+}
 #wrapper > .inner section#doctor .inner .ttl {
   margin-bottom: 20px;
 }
@@ -896,7 +928,7 @@ header#header > .inner .header_main .main_nav .menu .menu_item:hover .dropdown {
   #wrapper > .inner section#news .inner {
     max-width: 100%;
     width: 88.888%;
-    margin: 0 auto 10.4166666667vw;
+    margin: 0;
   }
 }
 #wrapper > .inner section#news .inner .ttl {
@@ -1701,6 +1733,7 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
 
 #wrapper.appointment > .inner {
   padding-top: 8%;
+  min-height: 500px;
 }
 #wrapper.appointment > .inner table {
   border-collapse: collapse;
